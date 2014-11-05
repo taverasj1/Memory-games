@@ -18,11 +18,12 @@ namespace WpfApplication1
         public MainWindow()
         {
             InitializeComponent();
-            _timer = new DispatcherTimer {Interval = TimeSpan.FromSeconds(0.9)}; // Starts timer.
+            /*_timer = new DispatcherTimer {Interval = TimeSpan.FromSeconds(0.9)}; // Starts timer.
             _timer.Tick += Timer_Tick;
             _timer.Start();
             _totalTime = _time; // Makes a copy for background to divide from. 
             DTimer.Text = _time.ToString();
+             * */
 
         }
         /* Running a ticking clock
@@ -72,8 +73,10 @@ namespace WpfApplication1
 
         private void StartButton_Click(object sender, RoutedEventArgs e)
         {
-          //StartButton.MouseDown = new MainWindow();
-            
+            //Create the game window
+            var game = new GameWindow();
+            game.Show(); //Makes the window visible
+
         }
     }
 }

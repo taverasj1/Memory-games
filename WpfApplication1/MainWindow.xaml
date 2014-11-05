@@ -4,6 +4,10 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" x:Class="WpfApplication1.MainWindow"
         Title="MainWindow" Height="350" Width="525">
     <Grid x:Name="Background1" HorizontalAlignment="Left" Height="301" Margin="10,9,0,0" VerticalAlignment="Top" Width="496" MouseDown="GridMousedDown">
+        <TextBlock x:Name="DTimer" TextAlignment="Center" FontSize="60"  Height="301" VerticalAlignment="Top" Background="Azure" MouseDown="GridMousedDown" Opacity="0.15" Margin="0,0,50,0" >
+            <TextBlock.Effect>
+                <DropShadowEffect Color="#FFFFF4F4"/>
+            </TextBlock.Effect></TextBlock>
         <Button x:Name="StartButton" FontSize="72" Content="  Start &#xA;Memory&#xA;  Game" Click="StartButton_Click" MouseDown="GridMousedDown" Margin="3,2,50,0" FontFamily="Buxton Sketch" TextOptions.TextHintingMode="Animated" FontWeight="SemiBold">
             <Button.Background>
                 <RadialGradientBrush>
@@ -13,9 +17,5 @@
                 </RadialGradientBrush>
             </Button.Background>
         </Button>
-        <TextBlock x:Name="DTimer" TextAlignment="Center" FontSize="60"  Height="301" VerticalAlignment="Top" Background="Azure" MouseDown="GridMousedDown" Opacity="0.15" Margin="0,0,50,0" >
-            <TextBlock.Effect>
-                <DropShadowEffect Color="#FFFFF4F4"/>
-            </TextBlock.Effect></TextBlock>
     </Grid>
 </Window>
